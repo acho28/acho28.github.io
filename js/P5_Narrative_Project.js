@@ -73,6 +73,8 @@ function beginning() {
 	button = createButton('Huh?');
 	if button.mousePressed(dummy1) {
 		dummy1.play();
+	}else{
+		dummy1.stop();
 	}
 }
 
