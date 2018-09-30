@@ -57,7 +57,7 @@ function setup() {
 //Beginning + Restart
 function beginning() {
 	background(0);
-	Welcome1.play();
+	welcome1.play();
 	greeting = createElement('h1', "What is your name, Challenger?");
 	createElement("br");
 
