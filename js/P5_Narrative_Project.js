@@ -70,7 +70,7 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
-	mouseClicked(welcome1.play());
+	button.mouseClicked(welcome1.play());
 	
 }
 
@@ -78,6 +78,7 @@ function beginning() {
 function startStory() {
 	greeting.hide();
 	nameInput.hide();
+	button.hide();
 	userName = createElement('h1', nameInput.value());
 	title = createElement('h1', "You are a student. Go to school.");
 
