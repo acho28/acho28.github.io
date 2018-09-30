@@ -57,6 +57,7 @@ function setup() {
 
 //preface
 function preface(){
+	background(0);
 	preface = createA("#", "Enter?");
 	preface.mousePressed(beginning);
 }
