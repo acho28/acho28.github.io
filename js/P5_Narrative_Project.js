@@ -35,6 +35,9 @@ var dummy5
 var dummy6
 var dummy7
 
+//interaction
+var button
+
 function preload(){
 	welcome1 = loadSound('sounds/Welcome1.mp3');
 	dummy1 = loadSound ('sounds/Dummy1.mp3');
@@ -67,6 +70,7 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
+	mouseClicked(welcome1.play());
 	
 }
 
