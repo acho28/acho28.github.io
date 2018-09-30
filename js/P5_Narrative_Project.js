@@ -71,10 +71,8 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
-	if button.mousePressed(dummy1) {
+	if (button.mouseClick == true) {
 		dummy1.play();
-	}else{
-		dummy1.stop();
 	}
 }
 
