@@ -62,7 +62,7 @@ function beginning() {
 	createElement("br");
 
 	nameInput = createInput("Input here.");
-	nameInput.mouseClicked(welcome1.play());
+	//nameInput.mouseClicked(welcome1.play());
 	nameInput.changed(startStory);
 	createElement("br");
 	
