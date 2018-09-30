@@ -74,7 +74,7 @@ function beginning() {
 }
 
 function mouseClick(){
-	if (button.mouseClick == true) {
+	if (button.contains(mouseX, mouseY)) {
 		dummy1.play();
 	}
 }
