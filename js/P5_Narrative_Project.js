@@ -59,14 +59,15 @@ function setup() {
 function beginning() {
 	background(0);
 	greeting = createElement('h1', "What is your name, Challenger?");
-	welcome1.play();
 	createElement("br");
 
-	nameInput = createInput("");
+	nameInput = createInput("Input here.");
 	nameInput.changed(startStory);
 	createElement("br");
 	
 	button = createButton('Huh?');
+	
+	nameInput.mouseclicked(welcome1.play());
 }
 
 //Story Start
