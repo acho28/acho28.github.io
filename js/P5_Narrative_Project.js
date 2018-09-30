@@ -70,7 +70,7 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
-	button.mouseClicked(welcome1.play());
+	button.mousePressed(welcome1.play());
 	
 }
 
