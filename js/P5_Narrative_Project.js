@@ -52,21 +52,14 @@ function setup() {
 	canvas.position(0, 0);
 	canvas.style("z-index", "-1");
 
-	preface();
-}
-
-//preface
-function preface(){
-	background(0);
-	preface = createA("#", "Enter?");
-	preface.mousePressed(beginning);
+	beginning();
 }
 
 //Beginning + Restart
 function beginning() {
 	background(0);
-	welcome1.play();
 	greeting = createElement('h1', "What is your name, Challenger?");
+	welcome1.play();
 	createElement("br");
 
 	nameInput = createInput("");
