@@ -71,12 +71,9 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
-	button.mousePressed(dummy1);
-	
-}
-
-function dummy1() {
-	dummy1.play();
+	if button.mousePressed(dummy1) {
+		dummy1.play();
+	}
 }
 
 //Story Start
