@@ -38,16 +38,16 @@ var dummy7
 //interaction
 var button
 
-// function preload(){
-	// welcome1 = loadSound('sounds/Welcome1.mp3');
-	// dummy1 = loadSound ('sounds/Dummy1.mp3');
-	// dummy2 = loadSound ('sounds/Dummy2.mp3');
-	// dummy3 = loadSound ('sounds/Dummy3.mp3');
-	// dummy4 = loadSound ('sounds/Dummy4.mp3');
-	// dummy5 = loadSound ('sounds/Dummy5.mp3');
-	// dummy6 = loadSound ('sounds/Dummy6.mp3');
-	// dummy7 = loadSound ('sounds/Dummy7.mp3');
-// }
+function preload(){
+	welcome1 = loadSound('sounds/Welcome1.mp3');
+	dummy1 = loadSound ('sounds/Dummy1.mp3');
+	dummy2 = loadSound ('sounds/Dummy2.mp3');
+	dummy3 = loadSound ('sounds/Dummy3.mp3');
+	dummy4 = loadSound ('sounds/Dummy4.mp3');
+	dummy5 = loadSound ('sounds/Dummy5.mp3');
+	dummy6 = loadSound ('sounds/Dummy6.mp3');
+	dummy7 = loadSound ('sounds/Dummy7.mp3');
+}
 	
 function setup() {
 
@@ -61,7 +61,7 @@ function setup() {
 //Beginning + Restart
 function beginning() {
 	background(0);
-	//welcome1.play();
+	welcome1.play();
 	greeting = createElement('h1', "What is your name, Challenger?");
 	createElement("br");
 
@@ -70,6 +70,10 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
+
+}
+
+function mouseClick(){
 	if (button.mouseClick == true) {
 		dummy1.play();
 	}
