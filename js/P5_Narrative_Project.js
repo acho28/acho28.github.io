@@ -35,14 +35,14 @@ var dummy6
 var dummy7
 
 function preload(){
-	welcome1 = loadSound('sound/Welcome1.wav');
-	dummy1 = loadSound ('sound/Dummy1.wav');
-	dummy2 = loadSound ('sound/Dummy2.wav');
-	dummy3 = loadSound ('sound/Dummy3.wav');
-	dummy4 = loadSound ('sound/Dummy4.wav');
-	dummy5 = loadSound ('sound/Dummy5.wav');
-	dummy6 = loadSound ('sound/Dummy6.wav');
-	dummy7 = loadSound ('sound/Dummy7.wav');
+	welcome1 = loadSound('sound/Welcome1.mp3');
+	dummy1 = loadSound ('sound/Dummy1.mp3');
+	dummy2 = loadSound ('sound/Dummy2.mp3');
+	dummy3 = loadSound ('sound/Dummy3.mp3');
+	dummy4 = loadSound ('sound/Dummy4.mp3');
+	dummy5 = loadSound ('sound/Dummy5.mp3');
+	dummy6 = loadSound ('sound/Dummy6.mp3');
+	dummy7 = loadSound ('sound/Dummy7.mp3');
 }
 	
 function setup() {
