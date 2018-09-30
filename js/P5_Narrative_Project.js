@@ -63,6 +63,9 @@ function beginning() {
 
 	nameInput = createInput("");
 	nameInput.changed(startStory);
+	createElement("br");
+	
+	button = createButton('Huh?');
 }
 
 //Story Start
@@ -106,7 +109,7 @@ function toSchool() {
 	walkToSchool = true;
 	userName.html(nameInput.value());
 
-	title.html('You go to school. A r00d d00d picks a fight with you.');
+	title.html('You go to school. A fool has appeared and is preparing to assault you.');
 	firstOption.html('Get ready to open a can of whoop-ass.');
 	secondOption.html("Get on your hands and knees to beg for forgiveness.");
 
