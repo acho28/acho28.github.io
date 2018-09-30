@@ -1,6 +1,7 @@
 var canvas;
 
 //screen text
+var preface
 var greeting;
 var title;
 var firstOption;
@@ -51,7 +52,13 @@ function setup() {
 	canvas.position(0, 0);
 	canvas.style("z-index", "-1");
 
-	beginning();
+	preface();
+}
+
+//preface
+function preface(){
+	preface = createA("#", "Enter?");
+	preface.mousePressed(beginning);
 }
 
 //Beginning + Restart
