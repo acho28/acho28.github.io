@@ -10,6 +10,7 @@ var userName;
 
 //inputs
 var nameInput;
+var button
 
 //animation variables
 var sunX;
@@ -63,6 +64,12 @@ function beginning() {
 
 	nameInput = createInput("");
 	nameInput.changed(startStory);
+	createElement("br");
+	
+	button = createButton('Huh?');
+	button.position(input.x + input.width, 65);
+	button.mousePressed(greet);
+	dummy1.play
 }
 
 //Story Start
