@@ -61,6 +61,7 @@ function setup() {
 //Beginning + Restart
 function beginning() {
 	background(0);
+	welcome1.play();
 	greeting = createElement('h1', "What is your name, Challenger?");
 	createElement("br");
 
@@ -70,8 +71,12 @@ function beginning() {
 	createElement("br");
 	
 	button = createButton('Huh?');
-	button.mousePressed(welcome1.play());
+	button.mousePressed(dummy1);
 	
+}
+
+function dummy1() {
+	dummy1.play();
 }
 
 //Story Start
