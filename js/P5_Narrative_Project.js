@@ -72,9 +72,9 @@ function beginning() {
 	
 	button = createButton('Huh?');
 	if (button.mouseClick == true) {
-		dummy1.play(true);
+		dummy1.play();
 	} else {
-		dummy1.stop(true);
+		dummy1.stop();
 	}
 }
 
