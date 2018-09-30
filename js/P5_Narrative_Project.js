@@ -10,7 +10,6 @@ var userName;
 
 //inputs
 var nameInput;
-var button
 
 //animation variables
 var sunX;
@@ -36,14 +35,14 @@ var dummy6
 var dummy7
 
 function preload(){
-	welcome1 = loadSound('sounds/Welcome1.mp3');
-	dummy1 = loadSound ('sounds/Dummy1.mp3');
-	dummy2 = loadSound ('sounds/Dummy2.mp3');
-	dummy3 = loadSound ('sounds/Dummy3.mp3');
-	dummy4 = loadSound ('sounds/Dummy4.mp3');
-	dummy5 = loadSound ('sounds/Dummy5.mp3');
-	dummy6 = loadSound ('sounds/Dummy6.mp3');
-	dummy7 = loadSound ('sounds/Dummy7.mp3');
+	welcome1 = loadSound('sound/Welcome1.wav');
+	dummy1 = loadSound ('sound/Dummy1.wav');
+	dummy2 = loadSound ('sound/Dummy2.wav');
+	dummy3 = loadSound ('sound/Dummy3.wav');
+	dummy4 = loadSound ('sound/Dummy4.wav');
+	dummy5 = loadSound ('sound/Dummy5.wav');
+	dummy6 = loadSound ('sound/Dummy6.wav');
+	dummy7 = loadSound ('sound/Dummy7.wav');
 }
 	
 function setup() {
@@ -64,12 +63,6 @@ function beginning() {
 
 	nameInput = createInput("");
 	nameInput.changed(startStory);
-	createElement("br");
-	
-	button = createButton('Huh?');
-	button.position(input.x + input.width, 65);
-	button.mousePressed(greet);
-	dummy1.play
 }
 
 //Story Start
