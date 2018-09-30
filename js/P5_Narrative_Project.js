@@ -62,12 +62,12 @@ function beginning() {
 	createElement("br");
 
 	nameInput = createInput("Input here.");
+	nameInput.mouseClicked(welcome1.play());
 	nameInput.changed(startStory);
 	createElement("br");
 	
 	button = createButton('Huh?');
 	
-	nameInput.mouseclicked(welcome1.play());
 }
 
 //Story Start
