@@ -26,20 +26,13 @@ var walkToSchool;
 var whoopHisAss
 
 //sounds
-var welcome1
-var dummy1
-var dummy2
-var dummy3
-var dummy4
-var dummy5
-var dummy6
-var dummy7
+var welcome
 
 //interaction
 var button
 
 function preload(){
-	welcome1 = loadSound('sounds/Welcome.mp3');
+	welcome = loadSound('sounds/Welcome.mp3');
 	
 }
 	
