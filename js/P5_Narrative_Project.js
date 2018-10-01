@@ -34,6 +34,23 @@ var button2
 
 function preload(){
 	welcome = loadSound('sounds/Welcome.mp3');
+	fail1 = loadSound('sounds/Fail1.mp3');
+	fail2 = loadSound('sounds/Fail2.mp3');
+	fail3 = loadSound('sounds/Fail3.mp3');
+	fail4 = loadSound('sounds/Fail4.mp3');
+	fail5 = loadSound('sounds/Fail5.mp3');
+	fail6 = loadSound('sounds/Fail6.mp3');
+	fail7 = loadSound('sounds/Fail7.mp3');
+	fight = loadSound('sounds/Fight1.mp3');
+	picClick1 = loadSound('sounds/PicClick1.mp3');
+	picClick2 = loadSound('sounds/PicClick2.mp3');
+	picClick3 = loadSound('sounds/PicClick3.mp3');
+	picClick4 = loadSound('sounds/PicClick4.mp3');
+	picClick5 = loadSound('sounds/PicClick5.mp3');
+	picClick6 = loadSound('sounds/PicClick6.mp3');
+	picClick7 = loadSound('sounds/PicClick7.mp3');
+	win = loadSound('sounds/Win.mp3');
+	
 	
 }
 	
@@ -82,6 +99,7 @@ function startStory() {
 	nameInput.hide();
 	button1.hide();
 	welcome.stop();
+	
 	userName = createElement('h1', nameInput.value());
 	title = createElement('h1', "You are a student. Go to school.");
 
@@ -98,6 +116,7 @@ function toHome() {
 	walkToSchool = false
 		walktoHome = true
 		secondOption.hide();
+		fail1.play();
 
 	title.html("You stay at home. You have missed too many days of school and were expelled! What did you think would happen if you chose not to go to school? Not all hope is lost, though. There's always trade school! And many jobs don't NEED college degrees. . . although I think you need your high school diploma. You really should have listened to your mother when she said not to miss too many days of school but NOOOOOOOOOOOOOOOOOOOOOOOOoooooo YOU DIDN'T LISTEN. NOW RESET AND DO IT RIGHT THIS TIME!");
 	firstOption.html('Start over');
