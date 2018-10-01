@@ -70,6 +70,7 @@ function beginning() {
 	createElement("br");
 	
 	button1 = createButton('Huh?');
+	button1.mouseClicked(mouseClicked);
 	// createElement("br");
 	// button2 = createButton('mute audio');
 	// button2.mousePressed(togglePlaying);
