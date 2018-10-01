@@ -331,8 +331,8 @@ function upperCut() {
 }
 
 function toggleRandom() {
-	if (mousePressed == true) {
-		random([picClick1.play()], [picClick6.play()]);
+	if (toggleRandom == true) {
+		random(picClick1.play(), picClick6.play());
 	}
 }
 
