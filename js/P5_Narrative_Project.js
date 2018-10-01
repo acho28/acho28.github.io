@@ -41,6 +41,7 @@ function preload(){
 	fail5 = loadSound('sounds/Fail5.mp3');
 	fail6 = loadSound('sounds/Fail6.mp3');
 	fail7 = loadSound('sounds/Fail7.mp3');
+	fail8 = loadSound('sounds/Fail8.mp3');
 	fight = loadSound('sounds/Fight1.mp3');
 	picClick1 = loadSound('sounds/PicClick1.mp3');
 	picClick2 = loadSound('sounds/PicClick2.mp3');
@@ -48,10 +49,9 @@ function preload(){
 	picClick4 = loadSound('sounds/PicClick4.mp3');
 	picClick5 = loadSound('sounds/PicClick5.mp3');
 	picClick6 = loadSound('sounds/PicClick6.mp3');
-	picClick7 = loadSound('sounds/PicClick7.mp3');
 	school = loadSound('sounds/School1.mp3');
 	win = loadSound('sounds/Win.mp3');
-	
+	finishHim = loadSound('sounds/finish-him.mp3');
 	
 }
 	
@@ -200,6 +200,7 @@ function whoopAss() {
 function rasenganDied1() {
 	secondOption.hide();
 	thirdOption.hide();
+	play.fail2();
 
 	title.html("You've died. Try again.");
 	firstOption.html('Start over');
@@ -216,6 +217,7 @@ function rasenganDied1() {
 function ballsExpelled1() {
 	secondOption.hide();
 	thirdOption.hide();
+	play.fail6();
 
 	title.html("He died. No one bothered you ever again. You were expelled from school and arrested on murder charges. Why must you be so extreme?");
 	firstOption.html('Start over');
@@ -231,6 +233,7 @@ function ballsExpelled1() {
 //Story Branch 1-1-3
 function punchNext() {
 	thirdOption.hide();
+	play.fight();
 
 	title.html('He dodged. You got punched in the face. What do you do?');
 	firstOption.html('Go for the balls.');
@@ -243,6 +246,7 @@ function punchNext() {
 //Story Branch 1-1-3-1
 function ballsExpelled2() {
 	secondOption.hide();
+	play.fail1();
 
 	title.html("You were weakened so he didn't die. He just never walked again. No one bothered you after that but you were expelled. WHY.");
 	firstOption.html('Start over');
@@ -258,6 +262,8 @@ function ballsExpelled2() {
 //Story Branch 1-1-3-2
 function mikeTyson() {
 	title.html('He is stunned. FINISH HIM.');
+	play.finishHim();
+	
 	firstOption.html('Pull out his spine and jump rope with it.');
 	secondOption.html('Uppercut!');
 	thirdOption = createA("#", 'RASENGAN!!!');
@@ -271,6 +277,7 @@ function mikeTyson() {
 function scorpionHell() {
 	secondOption.hide();
 	thirdOption.hide();
+	play.fail5();
 
 	title.html("You forfeit your soul and go to hell. You are now Scorpion.");
 	firstOption.html("You've won? Start over.");
@@ -287,6 +294,7 @@ function scorpionHell() {
 function rasenganDied2() {
 	secondOption.hide();
 	thirdOption.hide();
+	play.fail8();
 
 	title.html("THAT. IS. NOT. A. REAL. MOVE. You died.");
 	firstOption.html("You died. Start over.");
@@ -303,6 +311,7 @@ function rasenganDied2() {
 function upperCut() {
 	secondOption.hide();
 	thirdOption.hide();
+	play.win();
 
 	title.html("You gather your energy for one last push. You feel your body coil beneath you, your muscles rippling. You've trained for this, years of carrying backpacks and your parent's expectations on your shoulders. You shoot forward, almost invisible to the naked eye, as you break the sound barrier. His chin shoots upwards to stare at the sky and his axial vertebrae begin to collapse under the pressure of your strike. He flies upward, seemingly suspended in the air for ages, before he comes crashing back to the ground. You've won the fight. The principle awards you the highest honor for your badassery and you're immortalized in the school history books. You wake up. It was all a dream.");
 	firstOption.html("You've won. Start over?");
