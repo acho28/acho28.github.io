@@ -53,7 +53,6 @@ function beginning() {
 	createElement("br");
 
 	nameInput = createInput("Input here.");
-	nameInput.changed(startStory);
 	createElement("br");
 	
 	button1 = createButton('Huh?');
@@ -71,6 +70,7 @@ function togglePlaying() {
 		welcome.pause();
 		button2.html("unmute audio");
 	}
+	nameInput.changed(startStory);
 }
 
 //Story Start
