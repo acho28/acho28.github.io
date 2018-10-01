@@ -70,7 +70,6 @@ function beginning() {
 	createElement("br");
 	
 	button1 = createButton('Huh?');
-	button1.mousePressed(toggleRandom);
 	// createElement("br");
 	// button2 = createButton('mute audio');
 	// button2.mousePressed(togglePlaying);
@@ -327,12 +326,6 @@ function upperCut() {
 		location.reload(true);
 	} else {
 		Location.reload(false);
-	}
-}
-
-function toggleRandom() {
-	if (toggleRandom == true) {
-		random(picClick1.play(), picClick6.play());
 	}
 }
 
