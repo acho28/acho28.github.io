@@ -42,6 +42,7 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.position(0, 0);
 	canvas.style("z-index", "-1");
+	
 	beginning();
 }
 
@@ -57,9 +58,9 @@ function beginning() {
 	createElement("br");
 	
 	button1 = createButton('Huh?');
-	createElement("br");
-	button2 = createButton('mute audio');
-	button2.mousePressed(togglePlaying);
+	// createElement("br");
+	// button2 = createButton('mute audio');
+	// button2.mousePressed(togglePlaying);
 	
 
 }
