@@ -60,25 +60,26 @@ function beginning() {
 	createElement("br");
 	button2 = createButton('mute audio');
 	button2.mousePressed(togglePlaying);
+	
 
 }
 
-function togglePlaying() {
-	if (!welcome.isPlaying()) {
-		welcome.play();
-		button2.html("mute audio");
-	} else {
-		welcome.pause();
-		button2.html("unmute audio");
-	}
-	nameInput.changed(startStory);
-}
+// function togglePlaying() {
+	// if (!welcome.isPlaying()) {
+		// welcome.play();
+		// button2.html("mute audio");
+	// } else {
+		// welcome.pause();
+		// button2.html("unmute audio");
+	// }
+	// nameInput.changed(startStory);
+// }
 
 //Story Start
 function startStory() {
 	greeting.hide();
 	nameInput.hide();
-	button.hide();
+	button1.hide();
 	welcome.stop();
 	userName = createElement('h1', nameInput.value());
 	title = createElement('h1', "You are a student. Go to school.");
