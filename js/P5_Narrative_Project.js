@@ -49,6 +49,7 @@ function preload(){
 	picClick5 = loadSound('sounds/PicClick5.mp3');
 	picClick6 = loadSound('sounds/PicClick6.mp3');
 	picClick7 = loadSound('sounds/PicClick7.mp3');
+	school = loadSound('sounds/School1.mp3');
 	win = loadSound('sounds/Win.mp3');
 	
 	
@@ -137,6 +138,7 @@ function startOver() {
 function toSchool() {
 	walkToSchool = true;
 	userName.html(nameInput.value());
+	play.school();
 
 	title.html('You go to school. A fool has appeared and is preparing to assault you.');
 	firstOption.html('Get ready to open a can of whoop-ass.');
@@ -148,7 +150,8 @@ function toSchool() {
 
 //Story Branch 1-2
 function forgiveMe() {
-
+	play.fail4();
+	
 	title.html("He doesn't buy it. What do you do?");
 	firstOption.html("You have $2.37, an old gummy worm and some pocket lint. Maybe he'll be happy with that?");
 	secondOption.html("Get ready to open a can of whoop-ass.");
@@ -160,6 +163,7 @@ function forgiveMe() {
 //Story Branch 1-2-1
 function oopsDied() {
 	secondOption.hide();
+	play.fail3();
 
 	title.html("Insulted at your paltry offer, he killed you. If this nation doesn't negotiate with terrorists, why should you? FIGHT BACK.");
 	firstOption.html('Start over');
@@ -179,6 +183,7 @@ function whoopAss() {
 	whoopHisAss = true;
 
 	userName.html(nameInput.value());
+	play.fight();
 
 	title.html('You are now locked in combat. Running away will ruin your reputation and is not an option. What do you do?');
 	firstOption.html('RASENGAN.');
