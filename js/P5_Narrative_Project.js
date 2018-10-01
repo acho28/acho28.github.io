@@ -150,7 +150,7 @@ function toSchool() {
 
 //Story Branch 1-2
 function forgiveMe() {
-	play.fail4();
+	fail4.play();
 	
 	title.html("He doesn't buy it. What do you do?");
 	firstOption.html("You have $2.37, an old gummy worm and some pocket lint. Maybe he'll be happy with that?");
@@ -163,7 +163,7 @@ function forgiveMe() {
 //Story Branch 1-2-1
 function oopsDied() {
 	secondOption.hide();
-	play.fail3();
+	fail3.play();
 
 	title.html("Insulted at your paltry offer, he killed you. If this nation doesn't negotiate with terrorists, why should you? FIGHT BACK.");
 	firstOption.html('Start over');
@@ -183,7 +183,7 @@ function whoopAss() {
 	whoopHisAss = true;
 
 	userName.html(nameInput.value());
-	play.fight();
+	fight.play();
 
 	title.html('You are now locked in combat. Running away will ruin your reputation and is not an option. What do you do?');
 	firstOption.html('RASENGAN.');
@@ -200,7 +200,7 @@ function whoopAss() {
 function rasenganDied1() {
 	secondOption.hide();
 	thirdOption.hide();
-	play.fail2();
+	fail2.play();
 
 	title.html("You've died. Try again.");
 	firstOption.html('Start over');
@@ -217,7 +217,7 @@ function rasenganDied1() {
 function ballsExpelled1() {
 	secondOption.hide();
 	thirdOption.hide();
-	play.fail6();
+	fail6.play();
 
 	title.html("He died. No one bothered you ever again. You were expelled from school and arrested on murder charges. Why must you be so extreme?");
 	firstOption.html('Start over');
@@ -233,7 +233,7 @@ function ballsExpelled1() {
 //Story Branch 1-1-3
 function punchNext() {
 	thirdOption.hide();
-	play.fight();
+	fight.play();
 
 	title.html('He dodged. You got punched in the face. What do you do?');
 	firstOption.html('Go for the balls.');
@@ -246,7 +246,7 @@ function punchNext() {
 //Story Branch 1-1-3-1
 function ballsExpelled2() {
 	secondOption.hide();
-	play.fail1();
+	fail1.play();
 
 	title.html("You were weakened so he didn't die. He just never walked again. No one bothered you after that but you were expelled. WHY.");
 	firstOption.html('Start over');
@@ -262,7 +262,7 @@ function ballsExpelled2() {
 //Story Branch 1-1-3-2
 function mikeTyson() {
 	title.html('He is stunned. FINISH HIM.');
-	play.finishHim();
+	finishHim.play();
 	
 	firstOption.html('Pull out his spine and jump rope with it.');
 	secondOption.html('Uppercut!');
@@ -277,7 +277,7 @@ function mikeTyson() {
 function scorpionHell() {
 	secondOption.hide();
 	thirdOption.hide();
-	play.fail5();
+	fail5.play();
 
 	title.html("You forfeit your soul and go to hell. You are now Scorpion.");
 	firstOption.html("You've won? Start over.");
@@ -294,7 +294,7 @@ function scorpionHell() {
 function rasenganDied2() {
 	secondOption.hide();
 	thirdOption.hide();
-	play.fail8();
+	fail8.play();
 
 	title.html("THAT. IS. NOT. A. REAL. MOVE. You died.");
 	firstOption.html("You died. Start over.");
@@ -311,7 +311,7 @@ function rasenganDied2() {
 function upperCut() {
 	secondOption.hide();
 	thirdOption.hide();
-	play.win();
+	win.play();
 
 	title.html("You gather your energy for one last push. You feel your body coil beneath you, your muscles rippling. You've trained for this, years of carrying backpacks and your parent's expectations on your shoulders. You shoot forward, almost invisible to the naked eye, as you break the sound barrier. His chin shoots upwards to stare at the sky and his axial vertebrae begin to collapse under the pressure of your strike. He flies upward, seemingly suspended in the air for ages, before he comes crashing back to the ground. You've won the fight. The principle awards you the highest honor for your badassery and you're immortalized in the school history books. You wake up. It was all a dream.");
 	firstOption.html("You've won. Start over?");
