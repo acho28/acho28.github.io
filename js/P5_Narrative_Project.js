@@ -329,6 +329,11 @@ function upperCut() {
 	}
 }
 
+function mouseClicked() {
+	if (button1.mouseClicked == true) {
+		random([picClick1.play()], [picClick6.play()];
+}
+
 function WindowResized() {
 	canvas = createCanvas(windowWidth, windowHeight);
 }
