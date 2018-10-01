@@ -117,7 +117,7 @@ function toHome() {
 	walkToSchool = false
 		walktoHome = true
 		secondOption.hide();
-		fail1.play();
+	fail1.play();
 
 	title.html("You stay at home. You have missed too many days of school and were expelled! What did you think would happen if you chose not to go to school? Not all hope is lost, though. There's always trade school! And many jobs don't NEED college degrees. . . although I think you need your high school diploma. You really should have listened to your mother when she said not to miss too many days of school but NOOOOOOOOOOOOOOOOOOOOOOOOoooooo YOU DIDN'T LISTEN. NOW RESET AND DO IT RIGHT THIS TIME!");
 	firstOption.html('Start over');
