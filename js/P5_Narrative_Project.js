@@ -29,7 +29,8 @@ var whoopHisAss
 var welcome
 
 //interaction
-var button
+var button1
+var button2
 
 function preload(){
 	welcome = loadSound('sounds/Welcome.mp3');
@@ -41,7 +42,6 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.position(0, 0);
 	canvas.style("z-index", "-1");
-
 	beginning();
 }
 
@@ -56,8 +56,21 @@ function beginning() {
 	nameInput.changed(startStory);
 	createElement("br");
 	
-	button = createButton('Huh?');
+	button1 = createButton('Huh?');
+	createElement("br");
+	button2 = createButton('mute audio');
+	button2.mousePressed(togglePlaying);
 
+}
+
+function togglePlaying() {
+	if (!welcome.isPlaying()) {
+		welcome.play();
+		button2.html("mute audio");
+	} else {
+		welcome.pause();
+		button2.html("unmute audio");
+	}
 }
 
 //Story Start
