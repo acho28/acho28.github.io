@@ -313,7 +313,7 @@ function rasenganDied2() {
 	if (startOver == true) {
 		location.reload(true);
 	} else {
-		location.reload(false);
+		Location.reload(false);
 	}
 }
 
