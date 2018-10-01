@@ -138,7 +138,7 @@ function startOver() {
 function toSchool() {
 	walkToSchool = true;
 	userName.html(nameInput.value());
-	play.school();
+	school.play();
 
 	title.html('You go to school. A fool has appeared and is preparing to assault you.');
 	firstOption.html('Get ready to open a can of whoop-ass.');
