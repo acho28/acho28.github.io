@@ -12,12 +12,6 @@ var userName;
 //inputs
 var nameInput;
 
-//animation variables
-var sunX;
-var sunY;
-
-var sunSlider;
-
 //boolean
 var firstScreen;
 var walkToHome;
@@ -333,6 +327,22 @@ function upperCut() {
 	} else {
 		Location.reload(false);
 	}
+}
+
+function draw() { 
+
+}
+
+function keyPressed() {
+  var keyIndex = -1;
+  if (key >= 'a' && key <= 'z') {
+    keyIndex = key.charCodeAt(0) - 'a'.charCodeAt(0);
+  }
+  if (keyIndex == -1) {
+	  random(picClick1.play(), picClick2.play(), picClick3.play(), picClick4.play(), picClick5.play(), picClick6.play());
+  } else { 
+  random.stop();
+  }
 }
 
 function WindowResized() {
