@@ -52,7 +52,8 @@ function beginning() {
 	greeting = createElement('h1', "What is your name, Challenger?");
 	createElement("br");
 
-	nameInput = createInput("Input here.");
+	nameInput = createInput("");
+	nameInput.changed(startStory);
 	createElement("br");
 	
 	button1 = createButton('Huh?');
