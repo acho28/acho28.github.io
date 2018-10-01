@@ -39,14 +39,8 @@ var dummy7
 var button
 
 function preload(){
-	welcome1 = loadSound('sounds/Welcome1.mp3');
-	dummy1 = loadSound ('sounds/Dummy1.mp3');
-	dummy2 = loadSound ('sounds/Dummy2.mp3');
-	dummy3 = loadSound ('sounds/Dummy3.mp3');
-	dummy4 = loadSound ('sounds/Dummy4.mp3');
-	dummy5 = loadSound ('sounds/Dummy5.mp3');
-	dummy6 = loadSound ('sounds/Dummy6.mp3');
-	dummy7 = loadSound ('sounds/Dummy7.mp3');
+	welcome1 = loadSound('sounds/Welcome.mp3');
+	
 }
 	
 function setup() {
@@ -61,7 +55,7 @@ function setup() {
 //Beginning + Restart
 function beginning() {
 	background(0);
-	welcome1.play();
+	welcome.play();
 	greeting = createElement('h1', "What is your name, Challenger?");
 	createElement("br");
 
@@ -73,17 +67,12 @@ function beginning() {
 
 }
 
-function mouseClick(){
-	if (button.contains(mouseX, mouseY)) {
-		dummy1.play();
-	}
-}
-
 //Story Start
 function startStory() {
 	greeting.hide();
 	nameInput.hide();
 	button.hide();
+	welcome.stop();
 	userName = createElement('h1', nameInput.value());
 	title = createElement('h1', "You are a student. Go to school.");
 
@@ -144,7 +133,7 @@ function forgiveMe() {
 function oopsDied() {
 	secondOption.hide();
 
-	title.html("Insulted at your paltry offer, he beat your ass. You died. If this nation doesn't negotiate with terrorists, why should you? FIGHT BACK.");
+	title.html("Insulted at your paltry offer, he killed you. If this nation doesn't negotiate with terrorists, why should you? FIGHT BACK.");
 	firstOption.html('Start over');
 
 	firstOption.mousePressed(startOver);
@@ -179,7 +168,7 @@ function rasenganDied1() {
 	secondOption.hide();
 	thirdOption.hide();
 
-	title.html("That's not a real move. You got your ass beat, try again. Maybe next time learn some Muy Thai instead of watching so much anime.");
+	title.html("You've died. Try again.");
 	firstOption.html('Start over');
 
 	firstOption.mousePressed(startOver);
@@ -222,7 +211,7 @@ function punchNext() {
 function ballsExpelled2() {
 	secondOption.hide();
 
-	title.html("You were weakened so he didn't die. He just never walked again. No one bothered you after that but you were expelled. NOT. COOL.");
+	title.html("You were weakened so he didn't die. He just never walked again. No one bothered you after that but you were expelled. WHY.");
 	firstOption.html('Start over');
 
 	firstOption.mousePressed(startOver);
@@ -266,7 +255,7 @@ function rasenganDied2() {
 	secondOption.hide();
 	thirdOption.hide();
 
-	title.html("THAT. IS. NOT. A. REAL. MOVE. Everyone banded together to beat your ass.");
+	title.html("THAT. IS. NOT. A. REAL. MOVE. You died.");
 	firstOption.html("You died. Start over.");
 
 	firstOption.mousePressed(startOver);
