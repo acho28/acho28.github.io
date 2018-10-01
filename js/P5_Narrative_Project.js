@@ -340,8 +340,6 @@ function keyPressed() {
   }
   if (keyIndex == -1) {
 	  random(picClick1.play(), picClick2.play(), picClick3.play(), picClick4.play(), picClick5.play(), picClick6.play());
-  } else { 
-  random.stop();
   }
 }
 
