@@ -1,0 +1,12 @@
+{
+	birds: [
+	{
+			"name": "robin",
+			"wingspan": 8
+		}, 
+		{
+			"name": "eagle",
+			"wingspan": 24
+		}
+	]
+}
