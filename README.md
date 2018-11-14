@@ -17,3 +17,9 @@ No image library this time.
 Project 3
 
 Mood Music: Design based on old scammy looking websites. Claims to utilize mood to create a personalized song recommendation but is actually used to self-promote and promote related content that has been curated beforehand. 
+
+Project 4
+
+Supposed to be a fun photobooth-esque site with a capture function using my artwork.
+
+Many, many, bugs. Terrible, terrible, damage.
