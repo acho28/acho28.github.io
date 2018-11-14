@@ -42,6 +42,7 @@ function setup() {
 	}
 	backdropSelect.changed(changebackdrop);
 
+	//All of this is broke.
 	hueSlider = createSlider(-1, 1, .4, .01);
 	hueSlider.id('Hue');
 	hueSlider.position (50, 575);
@@ -84,6 +85,7 @@ function draw() {
 	image(capture, 0, 0, 640, 480);
 	pop();
 
+	//This are broke too.
 	if (i = 1) {
 		image(image1, 0, 0, 640, 480);
 	} else if (i = 2) {
@@ -99,6 +101,7 @@ function draw() {
 	}
 }
 
+//Capture function kinda works but resets camera in odd way after translation/flipping on x-axis
 function cheese(){
   save('myCanvas.png');
   return false;
