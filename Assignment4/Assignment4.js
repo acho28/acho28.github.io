@@ -11,9 +11,9 @@ var image3;
 var image4;
 var image5;
 var image6;
-var Hue;
-var Saturation;
-var Exposure;
+var hueSlider;
+var satSlider;
+var expSlider;
 
 function preload() {
 	image1 = loadImage('images/GS_Moon.png');
@@ -25,8 +25,8 @@ function preload() {
 }
 
 function setup() {
-	createCanvas(640, 480);
-	// canvas.id('canvas');
+	canvas = createCanvas(640, 480);
+	canvas.id('canvas');
 	capture = createCapture(VIDEO);
 	capture.size(1920, 1080);
 	capture.hide();
@@ -40,39 +40,42 @@ function setup() {
 	for (i = 0; i < backdrop.length; i++) {
 		backdropSelect.option(backdrop[i]);
 	}
-	// backdropSelect.changed(changebackdrop);
+	backdropSelect.changed(changebackdrop);
 
-	// hueSlider = createSlider(-1, 1, .4, .01);
-	// hueSlider.id('Hue');
-	// satSlider = createSlider(-1, 1, 0, .01);
-	// satSlider.id('Saturation');
-	// expSlider = createSlider(-1, 1, 0, .01);
-	// expSlider.id('Exposure');
+	hueSlider = createSlider(-1, 1, .4, .01);
+	hueSlider.id('Hue');
+	hueSlider.position (50, 575);
+	satSlider = createSlider(-1, 1, 0, .01);
+	satSlider.id('Saturation');
+	satSlider.position (250, 575);
+	expSlider = createSlider(-1, 1, 0, .01);
+	expSlider.id('Exposure');
+	expSlider.position (450,575);
 
-	// capture.id('webcam');
-	// var seriously = new Seriously();
+	capture.id('webcam');
+	var seriously = new Seriously();
 
-	// var src = seriously.source('#webcam');
-	// var target = seriously.target('#canvas');
+	var src = seriously.source('#webcam');
+	var target = seriously.target('#canvas');
 
-	// var hueSat = seriously.effect('hue-saturation');
-	// hueSat.hue = '#hueSlider';
-	// hueSat.saturation = '#satSlider';
-	// hueSat.source = src;
-	// target.source = hueSat;
+	var hueSat = seriously.effect('hue-saturation');
+	hueSat.hue = '#hueSlider';
+	hueSat.saturation = '#satSlider';
+	hueSat.source = src;
+	target.source = hueSat;
 	
-	// var exp = seriously.effect('exposure');
-	// exp.exposure = '#expSlider';
-	// exp.source = src;
-	// target.source = exp;
+	var exp = seriously.effect('exposure');
+	exp.exposure = '#expSlider';
+	exp.source = src;
+	target.source = exp;
 
-	// seriously.go();
+	seriously.go();
 }
 
-// function changebackdrop() {
-// var item = backdropSelect.value();
+function changebackdrop() {
+var item = backdropSelect.value();
 
-// }
+}
 
 function draw() {
 	push();
@@ -98,7 +101,8 @@ function draw() {
 
 function cheese(){
   save('myCanvas.png');
-  
+  return false;
+  redraw();
 }
 
 function windowResized() {
